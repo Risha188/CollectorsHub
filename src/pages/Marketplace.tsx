@@ -87,7 +87,7 @@ const Marketplace = () => {
     }
 
     return result
-  }, [search, category, condition])
+  }, [search, category, condition, sort])
 
   return (
     <main className="min-h-screen bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
@@ -147,7 +147,7 @@ const Marketplace = () => {
           >
             {conditions.map((item) => (
               <option key={item} value={item}>
-                {item === 'All' ? 'All Categories' : item}
+                {item === "All" ? "All Categories" : item}
               </option>
             ))}
           </select>
@@ -158,7 +158,7 @@ const Marketplace = () => {
             onChange={(e) => updateFilter("sort", e.target.value)}
             className="w-full rounded-xl border border-gray-300 bg-white py-3 pl-10 pr-4 text-gray-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
           >
-            <option>Newest</option>
+            <option value="newest">Newest</option>
             <option value="price-low">
               Price: Low → High
             </option>
