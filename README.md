@@ -4,42 +4,27 @@ A responsive React web application for collectors to browse marketplace listings
 
 ## Setup Instructions
 
-### 1. Clone the repository
+### 1. Install dependencies
 
-```bash
-git clone <your-github-repository-url>
-cd CollectorsHub
-```
-
-### 2. Install dependencies
-
-```bash
 npm install
-```
 
-### 3. Start the development server
+### 2. Start the development server
 
-```bash
 npm run dev
-```
 
 The application will be available at the local URL shown in the terminal, usually:
 
-```text
 http://localhost:5173
-```
 
-### 4. Build for production
+### 3. Build for production
 
-```bash
 npm run build
-```
 
-### 5. Preview the production build
+### 4. Preview the production build
 
-```bash
 npm run preview
-```
+
+### 5. Git Repo
 
 ## Libraries Used
 
@@ -48,7 +33,7 @@ npm run preview
 * **Vite** — Development server and build tool
 * **Tailwind CSS** — Responsive styling and UI design
 * **Lucide React** — Icons
-* **JavaScript (ES6+)** — Application logic and state handling
+* **TypeScript** — Application logic and state handling
 
 ## Assumptions Made
 
@@ -106,7 +91,6 @@ npm run preview
 
 ## Project Structure
 
-```text
 src/
 ├── components/
 │   ├── common/
@@ -121,7 +105,6 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
-```
 
 ## Responsive Design
 
