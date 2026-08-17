@@ -20,12 +20,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
             <div className="relative h-56 overflow-hidden bg-gray-100">
                 <Link
                     to={`/marketplace/${product.id}`}
-                    className="block"
+                    className="absolute inset-0 block"
                 >
                     <img
                         src={product.image}
                         alt={product.title}
-                        className="h-full w-full object-cover"
+                        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 hover:scale-105"
                     />
                 </Link>
 
